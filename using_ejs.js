@@ -25,4 +25,8 @@ app.get("/contact", function (req, res) {
     res.render("contact");
 })
 
+app.get("*", function (req, res) {
+    res.render("404");
+})
+
 app.listen(5001);
