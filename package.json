@@ -59,6 +59,8 @@
     "mime-types": "^2.1.35",
     "minimatch": "^3.1.2",
     "moment": "^2.29.4",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.1.1",
     "ms": "^2.0.0",
     "negotiator": "^0.6.3",
     "nodemon": "^2.0.22",
