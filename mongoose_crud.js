@@ -28,3 +28,24 @@ const updateData = async () => {
 }
 
 // updateData();
+
+/// To Delete Data
+const deleteData = async () => {
+    await mongoose.connect(url);
+    const ProductsModel = mongoose.model('products', ProductsSchema);
+    let data = await ProductsModel.deleteOne({ name: "vivo 13" });
+    console.warn(data);
+}
+
+// deleteData();
+
+
+/// To View/Get Data
+const getData = async () => {
+    await mongoose.connect(url);
+    const ProductsModel = mongoose.model('products', ProductsSchema);
+    let data = await ProductsModel.find();
+    console.warn(data);
+}
+
+getData();
